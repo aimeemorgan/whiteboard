@@ -4,7 +4,6 @@
 
 ###solution 1 : sort then compare
 
-###input: [12, 3, 3, 1, 2, 12, 3, 12, 1, 1]
 
 def find_single(array):
     if type(array) != list or len(array) % 3 != 1:
@@ -23,6 +22,7 @@ def find_single(array):
                     return array[i]
         return array[-1]
 
+####solution #2: implement item frequency counters with a dictionary
 
 def find_single_dict(array):
     if type(array) != list or len(array) % 3 != 1:
